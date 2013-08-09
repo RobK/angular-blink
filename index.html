@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/blink.css">
+  <script src="js/angular.min.js"></script>
+  <script src="js/blink.js"></script>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Native Blink</th>
+    <th>ng-blink</th>
+  </tr>
+  <tr>
+    <td>
+      <blink>
+        make it blink! <img src="http://dailyjs.com/images/young_cover150.jpeg"> some more text
+        <p>
+          testing 123
+        </p>
+        <table>
+          <tr><th>header</td></th>
+          <tr><td>test table</td></tr>
+        </table>
+      </blink>
+    </td>
+    <td>
+      <div  ng-app="components">
+        <blink>
+          make it blink!  222222  <img src="http://dailyjs.com/images/young_cover150.jpeg">   and again
+          <p>
+            testing 123
+          </p>
+          <table>
+            <tr><th>header</td></th>
+            <tr><td>test table</td></tr>
+          </table>
+          <div>a DIV test</div>
+        </blink>
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>

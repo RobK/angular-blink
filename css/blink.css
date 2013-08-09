@@ -1,0 +1,19 @@
+@keyframes         ng-blink {
+    0% { opacity:1; } 75% { opacity:1; } 76% { opacity:0; } 100% { opacity:0; }}
+@-webkit-keyframes ng-blink {
+    0% { opacity:1; } 75% { opacity:1; } 76% { opacity:0; } 100% { opacity:0; }}
+@-moz-keyframes    ng-blink {
+    0% { opacity:1; } 75% { opacity:1; } 76% { opacity:0; } 100% { opacity:0; }}
+@-ms-keyframes     ng-blink {
+    0% { opacity:1; } 75% { opacity:1; } 76% { opacity:0; } 100% { opacity:0; }}
+@-o-keyframes      ng-blink {
+    0% { opacity:1; } 75% { opacity:1; } 76% { opacity:0; } 100% { opacity:0; }}
+
+div.ng-blink span, div.ng-blink td, div.ng-blink th, div.ng-blink p, div.ng-blink div, div[ng-app] blink, div[ng-app] blink *{
+    text-decoration:   inherit;
+    animation:         ng-blink 0.75s ease-in infinite alternate;
+    -webkit-animation: ng-blink 0.75s ease-in infinite alternate;
+    -moz-animation:    ng-blink 0.75s ease-in infinite alternate;
+    -ms-animation:     ng-blink 0.75s ease-in infinite alternate;
+    -o-animation:      ng-blink 0.75s ease-in infinite alternate;
+}
