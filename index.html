@@ -4,39 +4,38 @@
   <link rel="stylesheet" href="css/blink.css">
   <script src="js/angular.min.js"></script>
   <script src="js/blink.js"></script>
+  <style>
+    body {
+      text-align: center;
+    }
+    table {
+      width: 100%;
+    }
+    td {
+      widows: 50%;
+    }
+    h2.awesome {
+      color: red;
+      height: 30px;;
+    }
+  </style>
 </head>
 <body>
 <table>
   <tr>
     <th>Native Blink</th>
-    <th>ng-blink</th>
+    <th>Angular-blink</th>
   </tr>
   <tr>
     <td>
-      <blink>
-        make it blink! <img src="http://dailyjs.com/images/young_cover150.jpeg"> some more text
-        <p>
-          testing 123
-        </p>
-        <table>
-          <tr><th>header</td></th>
-          <tr><td>test table</td></tr>
-        </table>
-      </blink>
+      This is your browser now, it doesn't support &lt;blink>.
+      <h2>&lt;blink>Not Awesome!&lt;/blink></h2>
     </td>
     <td>
       <div  ng-app="ng-blink">
-        <blink>
-          make it blink!  222222  <img src="http://dailyjs.com/images/young_cover150.jpeg">   and again
-          <p>
-            testing 123
-          </p>
-          <table>
-            <tr><th>header</td></th>
-            <tr><td>test table</td></tr>
-          </table>
-          <div>a DIV test</div>
-        </blink>
+        This is with Angular-blink enabled
+        <h2 class="awesome"><blink>&lt;blink>Awesome!&lt;/blink></blink></h2>
+        <img src="tests/awesome-website.png">
       </div>
     </td>
   </tr>
