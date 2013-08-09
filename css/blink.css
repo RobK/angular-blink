@@ -17,3 +17,7 @@ div.ng-blink span, div.ng-blink td, div.ng-blink th, div.ng-blink p, div.ng-blin
     -ms-animation:     ng-blink 0.75s ease-in infinite alternate;
     -o-animation:      ng-blink 0.75s ease-in infinite alternate;
 }
+
+.hidden {
+    display: none;
+}
